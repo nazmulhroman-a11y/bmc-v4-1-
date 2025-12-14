@@ -1,5 +1,12 @@
 import React, { useRef, useState } from "react";
 import { AnalysisResult, BMCData, BMC_LABELS } from "../types";
+
+// Type declaration for html2pdf
+declare global {
+  interface Window {
+    html2pdf: () => any;
+  }
+}
 import {
   PieChart,
   Pie,
